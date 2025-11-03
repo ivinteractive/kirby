@@ -283,11 +283,12 @@ class Document
 			$frameAncestors === true   => "'self'",
 			is_array($frameAncestors)  => "'self' " . implode(' ', $frameAncestors),
 			is_string($frameAncestors) => $frameAncestors,
+			$frameAncestors === null   => null,
 			default                    => "'none'"
 		};
 
-		return new Response($body, 'text/html', $code, [
+		return new Response($body, 'text/html', $code, $frameAncestors !== null ? [
 			'Content-Security-Policy' => 'frame-ancestors ' . $frameAncestors
-		]);
+		] : []);
 	}
 }
