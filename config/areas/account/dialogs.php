@@ -28,8 +28,8 @@ return [
 	// change password
 	'account.changePassword' => [
 		'pattern' => '(account)/changePassword',
-		'load'    => $dialogs['user.changePassword']['load'],
-		'submit'  => $dialogs['user.changePassword']['submit'],
+		'load'    => $dialogs['user.changePasswordSelf']['load'],
+		'submit'  => $dialogs['user.changePasswordSelf']['submit'],
 	],
 
 	// change role

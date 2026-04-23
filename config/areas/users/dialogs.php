@@ -210,6 +210,61 @@ return [
 		}
 	],
 
+	// change own password
+	'user.changePasswordSelf' => [
+		'pattern' => 'users/(:any)/changePassword',
+		'load' => function (string $id) {
+			$user = Find::user($id);
+
+			return [
+				'component' => 'k-form-dialog',
+				'props' => [
+					'fields' => [
+						'current_password' => Field::password([
+							'label' => I18n::translate('user.changePassword.current'),
+						]),
+						'password' => Field::password([
+							'label' => I18n::translate('user.changePassword.new'),
+						]),
+						'passwordConfirmation' => Field::password([
+							'label' => I18n::translate('user.changePassword.new.confirm'),
+						])
+					],
+					'submitButton' => I18n::translate('change'),
+				]
+			];
+		},
+		'submit' => function (string $id) {
+			$request = App::instance()->request();
+
+			$user                 = Find::user($id);
+			$currentPassword      = $request->get('current_password');
+			$password             = $request->get('password');
+			$passwordConfirmation = $request->get('passwordConfirmation');
+
+			if (password_verify($currentPassword, $user->password()) !== true) {
+				throw new InvalidArgumentException(['key' => 'user.password.notCurrent', 'httpCode' => 401]);
+			}
+
+			// validate the password
+			UserRules::validPassword($user, $password ?? '');
+
+			// compare passwords
+			if ($password !== $passwordConfirmation) {
+				throw new InvalidArgumentException([
+					'key' => 'user.password.notSame'
+				]);
+			}
+
+			// change password if everything's fine
+			$user->changePassword($password);
+
+			return [
+				'event' => 'user.changePassword'
+			];
+		}
+	],
+
 	// change role
 	'user.changeRole' => [
 		'pattern' => 'users/(:any)/changeRole',

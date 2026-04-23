@@ -574,6 +574,7 @@
 	"user.changeLanguage": "Cambiar idioma",
 	"user.changeName": "Renombrar este usuario",
 	"user.changePassword": "Cambiar la contraseña",
+	"user.changePassword.current": "Current password",
 	"user.changePassword.new": "New password",
 	"user.changePassword.new.confirm": "Confirma la nueva contraseña...",
 	"user.changeRole": "Cambiar rol",
