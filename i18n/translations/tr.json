@@ -185,6 +185,7 @@
 	"error.user.notFound": "\"{name}\" kullanıcısı bulunamadı",
 	"error.user.password.excessive": "Lütfen geçerli bir şifre girin. Şifreler 1000 karakterden uzun olmamalıdır.",
 	"error.user.password.invalid": "Lütfen geçerli bir şifre giriniz. Şifreler en az 8 karakter uzunluğunda olmalıdır.",
+	"error.user.password.isCurrent": "The new password must be different from the current password",
 	"error.user.password.notSame": "Lütfen şifreyi doğrulayın",
 	"error.user.password.notCurrent": "The current password is incorrect",
 	"error.user.password.undefined": "Bu kullanıcının şifresi yok",

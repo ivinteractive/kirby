@@ -185,6 +185,7 @@
 	"error.user.notFound": "کاربر «{name}» پیدا نشد",
 	"error.user.password.excessive": "Please enter a valid password. Passwords must not be longer than 1000 characters.",
 	"error.user.password.invalid": "لطفا گذرواژه صحیحی با حداقل طول 8 حرف وارد کنید. ",
+	"error.user.password.isCurrent": "The new password must be different from the current password",
 	"error.user.password.notSame": "لطفا تکرار گذرواژه را وارد نمایید",
 	"error.user.password.notCurrent": "The current password is incorrect",
 	"error.user.password.undefined": "کاربر فاقد گذرواژه است",

@@ -185,6 +185,7 @@
 	"error.user.notFound": "Nie można znaleźć użytkownika \"{name}\"",
 	"error.user.password.excessive": "Wpisz prawidłowe hasło. Hasła nie mogą być dłuższe niż 1000 znaków.",
 	"error.user.password.invalid": "Wprowadź prawidłowe hasło. Hasła muszą mieć co najmniej 8 znaków.",
+	"error.user.password.isCurrent": "The new password must be different from the current password",
 	"error.user.password.notSame": "Hasła nie są takie same",
 	"error.user.password.notCurrent": "The current password is incorrect",
 	"error.user.password.undefined": "Użytkownik nie ma hasła",

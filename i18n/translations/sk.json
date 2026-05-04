@@ -185,6 +185,7 @@
 	"error.user.notFound": "Užívateľa \"{name}\" nie je možné nájsť",
 	"error.user.password.excessive": "Please enter a valid password. Passwords must not be longer than 1000 characters.",
 	"error.user.password.invalid": "Prosím, zadajte platné heslo. Dĺžka hesla musí byť aspoň 8 znakov.",
+	"error.user.password.isCurrent": "The new password must be different from the current password",
 	"error.user.password.notSame": "Heslá nie sú rovnaké",
 	"error.user.password.notCurrent": "The current password is incorrect",
 	"error.user.password.undefined": "Užívateľ nemá heslo",

@@ -185,6 +185,7 @@
 	"error.user.notFound": "Uživatele se nepodařilo nalézt",
 	"error.user.password.excessive": "Zadejte prosím platné heslo. Heslo nesmí být delší než 1000 znaků.",
 	"error.user.password.invalid": "Zadejte prosím platné heslo. Heslo musí být dlouhé alespoň 8 znaků.",
+	"error.user.password.isCurrent": "The new password must be different from the current password",
 	"error.user.password.notSame": "Prosím potvrďte heslo",
 	"error.user.password.notCurrent": "The current password is incorrect",
 	"error.user.password.undefined": "Uživatel nemá nastavené heslo.",

@@ -358,6 +358,15 @@ class UserRules
 			]);
 		}
 
+		if ($currentPassword = $user->password()) {
+			if (password_verify($password, $currentPassword) === true) {
+				throw new InvalidArgumentException([
+					'key' => 'user.password.isCurrent',
+				]);
+			}
+
+		}
+
 		return true;
 	}
 

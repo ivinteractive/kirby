@@ -185,6 +185,7 @@
 	"error.user.notFound": "Пользователь \"{name}\" не найден",
 	"error.user.password.excessive": "Пожалуйста, введите верный пароль. Длина паролей не должна превышать 1000 символов.",
 	"error.user.password.invalid": "Пожалуйста, введите правильный пароль. Он должен состоять минимум из 8 символов.",
+	"error.user.password.isCurrent": "The new password must be different from the current password",
 	"error.user.password.notSame": "Пожалуйста, подтвердите пароль",
 	"error.user.password.notCurrent": "The current password is incorrect",
 	"error.user.password.undefined": "У пользователя нет пароля",

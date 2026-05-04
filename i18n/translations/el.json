@@ -185,6 +185,7 @@
 	"error.user.notFound": "Δεν είναι δυνατή η εύρεση του χρήστη \"{name}\"",
 	"error.user.password.excessive": "Please enter a valid password. Passwords must not be longer than 1000 characters.",
 	"error.user.password.invalid": "Παρακαλώ εισάγετε έναν έγκυρο κωδικό πρόσβασης. Οι κωδικοί πρόσβασης πρέπει να έχουν μήκος τουλάχιστον 8 χαρακτήρων.",
+	"error.user.password.isCurrent": "The new password must be different from the current password",
 	"error.user.password.notSame": "Παρακαλούμε επιβεβαιώστε τον Κωδικό Πρόσβασης",
 	"error.user.password.notCurrent": "The current password is incorrect",
 	"error.user.password.undefined": "Ο χρήστης δεν έχει κωδικό πρόσβασης",

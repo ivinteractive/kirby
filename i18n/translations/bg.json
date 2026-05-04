@@ -185,6 +185,7 @@
 	"error.user.notFound": "Потребителят не може да бъде намерен.",
 	"error.user.password.excessive": "Please enter a valid password. Passwords must not be longer than 1000 characters.",
 	"error.user.password.invalid": "Моля въведете валидна парола. Тя трабва да съдържа поне 8 символа.",
+	"error.user.password.isCurrent": "The new password must be different from the current password",
 	"error.user.password.notSame": "Моля, потвърдете паролата",
 	"error.user.password.notCurrent": "The current password is incorrect",
 	"error.user.password.undefined": "Потребителят няма парола",

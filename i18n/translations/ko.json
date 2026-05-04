@@ -185,6 +185,7 @@
 	"error.user.notFound": "사용자({name})가 없습니다.",
 	"error.user.password.excessive": "Please enter a valid password. Passwords must not be longer than 1000 characters.",
 	"error.user.password.invalid": "암호를 8자 이상으로 설정하세요.",
+	"error.user.password.isCurrent": "The new password must be different from the current password",
 	"error.user.password.notSame": "암호를 확인하세요.",
 	"error.user.password.notCurrent": "The current password is incorrect",
 	"error.user.password.undefined": "암호가 설정되지 않았습니다.",
